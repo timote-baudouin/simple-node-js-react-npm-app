@@ -40,6 +40,6 @@ firebase deploy --only hosting:idsite --project jenkin-blueocean-pipeline --toke
 
   }
   environment {
-    FIREBASE_TOKEN = '1//03eEzCNtknD4nCgYIARAAGAMSNwF-L9IrQWsmt3ZyCLAxl82keBiDuEDva_AJUzkKCRjTZrZH2xb9_k3h3XbZgbRiWc70FhRxNRc'
+    FIREBASE_TOKEN = '1//03I2JIEziVvH3CgYIARAAGAMSNwF-L9IrgIoYHW_nS52FMKNO2-Cy9cdtNoJcwk-PJIQF0HgO-xEphKvfCwuX3AZso1MA7xZG5Ks'
   }
 }
