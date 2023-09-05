@@ -28,8 +28,10 @@ pipeline {
 
     stage('deploy') {
       steps {
-        sh '''npm deploy
+        sh '''yarn global add firebase-tools
+
 echo FIREBASE_TOKEN
+
 export PATH="$(yarn global bin):$PATH
 
 firebase deploy --only hosting:idsite --project jenkin-blueocean-pipeline --token $FIREBASE_TOKEN'''
