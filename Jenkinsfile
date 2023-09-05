@@ -9,32 +9,7 @@ pipeline {
   stages {
     stage('welcome') {
       steps {
-        sh 'echo "coucou"'
-      }
-    }
-
-    stage('install') {
-      steps {
-        sh '''npm install
-'''
-      }
-    }
-
-    stage('build') {
-      steps {
-        sh 'npm run build'
-      }
-    }
-
-    stage('deploy') {
-      steps {
-        sh '''yarn global add firebase-tools
-
-echo FIREBASE_TOKEN
-
-export PATH="$(yarn global bin):$PATH
-
-firebase deploy --only hosting:idsite --project jenkin-blueocean-pipeline --token $FIREBASE_TOKEN'''
+        sh 'echo "bonjour\''
       }
     }
 
