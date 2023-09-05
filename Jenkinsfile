@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:18.17.1-alpine3.18'
-      args 'L\'image du conteneur'
+      args '-p 3000:3000'
     }
 
   }
@@ -13,8 +13,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    ports = '-p 3000:3000'
   }
 }
